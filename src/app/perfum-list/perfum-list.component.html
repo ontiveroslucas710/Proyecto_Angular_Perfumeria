@@ -11,12 +11,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let perfum of perfumes">
+        <tr *ngFor="let perfum of perfumes" [ngClass]="{'oferta': perfum.oferta}">
             
             <td>{{perfum.nombre}}</td>
             <td>{{perfum.marca}}</td>
             <td>{{perfum.precio}}</td>
-            <td>{{perfum.stock}}</td>
+            <td><span *ngIf="perfum.stock==0" class="badge badge-warning">NO HAY STOCK</span><samp *ngIf="perfum.stock >0">{{perfum.stock}}</samp></td>
             <td><img width="50px" [src]="perfum.imagen" [alt]="perfum.nombre"></td>
         </tr>
     </tbody>

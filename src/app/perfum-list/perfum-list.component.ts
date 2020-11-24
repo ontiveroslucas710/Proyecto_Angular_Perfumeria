@@ -15,13 +15,15 @@ export class PerfumListComponent implements OnInit {
     precio:1500,
     stock:10,
     imagen:'assets/img/adventure.jpg',
+    oferta:true,
   },
   {
     nombre:'Clasic',
     marca:'KAYAK',
     precio:5,
-    stock:5,
+    stock:0,
     imagen:'assets/img/kaiak.jpg',
+    oferta:false,
   }
   ]
   constructor() { }

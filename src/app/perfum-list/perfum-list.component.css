@@ -1,3 +1,7 @@
 h1 {
     color: blue;
 }
+.oferta{
+    border: 2px solid rgb(14, 134, 60);
+    background-color: rgb(91, 231, 133);
+}
