@@ -1,0 +1,23 @@
+<h1>aca va el titulo</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>stock</th>
+            <th>imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let perfum of perfumes">
+            
+            <td>{{perfum.nombre}}</td>
+            <td>{{perfum.marca}}</td>
+            <td>{{perfum.precio}}</td>
+            <td>{{perfum.stock}}</td>
+            <td><img width="50px" [src]="perfum.imagen" [alt]="perfum.nombre"></td>
+        </tr>
+    </tbody>
+</table>
